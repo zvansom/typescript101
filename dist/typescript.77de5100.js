@@ -106,6 +106,23 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"index.ts":[function(require,module,exports) {
 console.log("hello world");
+var isOpen = false;
+var myName = 'Zach';
+var myAge = 35;
+var list = [0, 1, 2];
+var me = ["Zach", 35, false];
+var Job;
+
+(function (Job) {
+  Job[Job["WebDev"] = 0] = "WebDev";
+  Job[Job["WebDesign"] = 1] = "WebDesign";
+  Job[Job["PM"] = 2] = "PM";
+})(Job || (Job = {}));
+
+;
+var job = Job.WebDev;
+var phone = "Galaxy";
+var height = 75;
 },{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -133,7 +150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65387" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50583" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
