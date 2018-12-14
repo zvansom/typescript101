@@ -112,3 +112,11 @@ class Team {
 const redWings = new Team('Red Wings');
 redWings.score();
 console.log(redWings.teamName);
+
+// Generics
+const outputInput = <T>(arg: T): T => {
+  return arg;
+};
+
+const output: string = outputInput('hi');
+outputInput(3);

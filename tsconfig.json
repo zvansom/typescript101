@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "removeComments": true,
+    "removeComments": true
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules"]
