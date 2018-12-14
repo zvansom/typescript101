@@ -104,3 +104,24 @@ enum Type {
 const createContent = (contentType: Type) => {};
 
 createContent(Type.Quiz);
+
+// Classes
+class Team {
+  teamName: string;
+  // public teamName: string; // Same as above
+  // private teamName: string; // Prevents outside usage
+  // readonly teamName: string; // Prevents from being changed (only set in constructor)
+
+
+  constructor(teamName) {
+    this.teamName = teamName;
+  }
+  score(): string {
+    console.log(this.teamName);
+    return 'goal';
+  }
+}
+
+const redWings = new Team('Red Wings');
+redWings.score();
+console.log(redWings.teamName);
