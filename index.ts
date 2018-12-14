@@ -1,4 +1,4 @@
-console.log("hello world");
+// console.log("hello world");
 
 const isOpen: boolean = false;
 const myName: string = 'Zach';
@@ -17,9 +17,17 @@ const phone: any = "Galaxy";
 const height: any = 75;
 
 // Functions in TS
-const sayWord = (word: string): string => {
-  console.log(word);
+// '?' is for optional params
+// const sayWord = (word?: string): string => {
+//   console.log(word || 'hello');
+//   return word || 'hello';
+// };
+
+// sayWord('Zach');
+
+const sayWord = (word = 'hello', ...otherStuff: string[]): string => {
+  console.log(otherStuff);
   return word;
 };
 
-sayWord('Zach');
+sayWord('Zach', 'Lindsay');
