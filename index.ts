@@ -33,8 +33,28 @@ const sayWord = (word = 'hello', ...otherStuff: string[]): string => {
 sayWord('Zach', 'Lindsay');
 
 // Implicit Types
-let newName = 'Zach';
-newName = 'Lindsay';
+// let newName = 'Zach';
+// newName = 'Lindsay';
 
-let newNameTwo = newName;
-newNameTwo = 2;
+// let newNameTwo = newName;
+// newNameTwo = 2;
+
+// Union types
+// let newName: string | number = 'Zach';
+// newName = 'Lindsay';
+// newName = 10;
+
+// Union types in a function
+const makeMargin = (x: string | number): string => {
+  return `margin: ${x}px`;
+};
+
+makeMargin(10);
+makeMargin('10');
+makeMargin(false);
+
+// Null types
+let dog: string = 'pupper';
+dog = null;
+dog = "juno";
+dog = undefined;
