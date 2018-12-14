@@ -11,7 +11,15 @@ enum Job {
   WebDesign,
   PM
 };
+
 const job: Job = Job.WebDev;
 const phone: any = "Galaxy";
 const height: any = 75;
 
+// Functions in TS
+const sayWord = (word: string): string => {
+  console.log(word);
+  return word;
+};
+
+sayWord('Zach');

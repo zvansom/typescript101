@@ -1,0 +1,75 @@
+<div class="form_container">
+  <div class="form_description">
+    <img class="form_image" src="https://www.gosciencefinance.com/wp-content/uploads/2017/12/Trip-to-Peru-Paracas-e1512527191945.jpg" alt="Paracas 600 pixels" />
+    <p>Grab the free printable Travel Budget Planner I used to plan a two-week trip to Peru for $650!</p>
+    <p>This Travel Budget Planner will help you budget for travel, even if you're in debt now. YOLO, but don't go into debt for it!</p>
+  </div>
+  <form id="ck_subscribe_form" class="form_body" action="https://app.convertkit.com/landing_pages/450143/subscribe" data-remote="true">
+    <h3 class="form_header">See the world with my free printable Travel Budget Planner!</h3>
+    <input type="hidden" name="id" value="450143" id="landing_page_id" />
+    <label for="firstname">First Name:</label>
+    <input type="text" name="first_name" id="firstname" class="form_input" required />
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" class="form_input" required />
+    <button type="submit" class="form_button">Sign me up!</button>
+    <p class="privacy-statement">Spam sucks more than canned meat. Your email address is safe with me. Click here to read my <a href="#" class="privacy-policy">Privacy Policy</a>.</p>
+  </form>
+</div>
+
+<style>
+  .form_container {
+    margin: 0 0;
+    padding: 1em;
+    background: #dff1d9;
+    border: 10px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow; column dense;
+    gap: 1em;
+  }
+  @media (max-width: 800px) {
+    .form_container {
+      grid-template-columns: 1fr;
+    }
+    .form_body {
+      grid-row-start: 1;
+    }
+  }
+  .form_header {
+    font-family: 'Permanent Marker', sans-serif;
+    text-transform: uppercase;
+    font-weight; 300;
+    line-height: 1.4;
+    font-size: 24px;
+    text-align: center;
+  }
+  .form_image {
+    grid-row-start: 1;
+    max-width: 100%;
+    height: auto;
+  }
+  .form_body {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
+  }
+  .form_description {
+    text-align: center;
+    padding: 2em;
+  }
+  .form_input {
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 1em;
+  }
+  .form_button {
+    margin-top: 2em;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 1em;
+  }
+  .privacy-statement {
+    text-align: center;
+  }
+</style>
