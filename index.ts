@@ -82,3 +82,25 @@ sayName({
   age: 35,
   name: 'Zach', 
 });
+
+// Enums
+// Numeric enum
+// enum Type {
+//   Video, // 0
+//   BlogPost, // 1
+//   Quiz, // 2
+// };
+
+// const createContent = (contentType: Type) => {};
+
+// createContent(Type.Quiz);
+// String enum
+enum Type {
+  Video = "VIDEO",
+  BlogPost = "BLOG_POST",
+  Quiz = "QUIZ",
+};
+
+const createContent = (contentType: Type) => {};
+
+createContent(Type.Quiz);
