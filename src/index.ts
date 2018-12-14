@@ -120,3 +120,17 @@ const outputInput = <T>(arg: T): T => {
 
 const output: string = outputInput('hi');
 outputInput(3);
+
+// Duck Typing
+class Dancer implements Person {
+  name: string;
+  age?: number;
+}
+
+let ElNino: Person = new Dancer();
+const fake = {
+  name: 'Zach',
+  year: 35
+}
+
+ElNino = fake;
