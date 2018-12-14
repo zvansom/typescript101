@@ -1,3 +1,4 @@
+import Job, { Person, Type } from './Interfaces';
 // console.log("hello world");
 
 const isOpen: boolean = false;
@@ -6,11 +7,7 @@ const myAge: number = 35;
 const list: number[] = [0, 1, 2];
 const me: [string, number, boolean] = ["Zach", 35, false];
 
-enum Job { 
-  WebDev,
-  WebDesign,
-  PM
-};
+
 
 const job: Job = Job.WebDev;
 const phone: any = "Galaxy";
@@ -51,19 +48,13 @@ const makeMargin = (x: string | number): string => {
 
 makeMargin(10);
 makeMargin('10');
-makeMargin(false);
+// makeMargin(false);
 
 // Null types
 let dog: string = 'pupper';
 dog = null;
 dog = "juno";
 dog = undefined;
-
-// Interfaces
-interface Person {
-  name: string;
-  age?: number; // Optional param
-}
 
 const sayName = ({ name, age }: Person): string => {
   console.log(name);
@@ -95,11 +86,7 @@ sayName({
 
 // createContent(Type.Quiz);
 // String enum
-enum Type {
-  Video = "VIDEO",
-  BlogPost = "BLOG_POST",
-  Quiz = "QUIZ",
-};
+
 
 const createContent = (contentType: Type) => {};
 
